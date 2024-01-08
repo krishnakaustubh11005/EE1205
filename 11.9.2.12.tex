@@ -1,0 +1,95 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Exempler- 11.9.2.12}
+\author{EE22BTECH11005- Ambati Krishna Kaustubh}% <-this % stops a space
+
+\maketitle
+\newpage
+\bigskip
+
+
+\parindent 0px
+\title{\textbf{Exempler-11.9.2.12}
+}
+\author{\textbf{\begin{arge}EE23BTECH11005\end{arge}}-Ambati Krishna Kaustubh}
+
+\maketitle
+
+\textbf{Question:}
+
+The ratio of sums of m and n terms of an A.P. is $m^2:n^2$.Show
+
+that the ratio of $m^{th}$ and $n^{th}$ term is (2m-1):(2n-1).
+
+{\textbf{Solution:}}
+
+
+The general equation for the sum of n terms of an A.P. is given by
+\begin{align}S(n)=\frac{n}{2} {(2a+(n-1)d)}\end{align}
+The general equation for the $n^{th }$ term of an A.P is given by
+\begin{align}T(n)=a+(n-1)d\end{align}
+where a is the first term and d is the common difference of A.P.\\[4pt]
+
+Given,
+\begin{align}\frac{S(n)}{S(m)}=\frac{m^2}{n^2}\end{align}
+now substituting S(m) and S(n) into the (2) we get,
+\begin{align}\frac{\frac{n}{2} {(2a+(n-1)d)}}{\frac{m}{2} {(2a+(n-1)d)}}= 
+ {\frac{m^2}{n^2}}\end{align}
+ By cross multiplying and solving we get a relation between a and d that is
+ \begin{align}2a=d\end{align}
+ The ratio between $m^{th}$ and $n^{th}$ terms is given by
+ \begin{align}\frac{T(m)}{T(n)}=\frac{a+(m-1)d}{a+(n-1)d}\end{align}
+ 
+ Now substituting (5) in (6) we get \textbf{T(m):T(n)=(2m-1):(2n-1)}.
+
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\end{document}
