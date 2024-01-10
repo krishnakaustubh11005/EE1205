@@ -64,7 +64,6 @@
 \textbf{Question:}
 
 The ratio of sums of m and n terms of an A.P. is $m^2:n^2$.Show
-
 that the ratio of $m^{th}$ and $n^{th}$ term is (2m-1):(2n-1).
 
 {\textbf{Solution:}}
@@ -77,17 +76,50 @@ The general equation for the $n^{th }$ term of an A.P is given by
 where a is the first term and d is the common difference of A.P.\\[4pt]
 
 Given,
-\begin{align}\frac{S(n)}{S(m)}=\frac{m^2}{n^2}\end{align}
+\begin{align}\frac{S(m)}{S(n)}=\frac{m^2}{n^2}\end{align}
 now substituting S(m) and S(n) into the (2) we get,
-\begin{align}\frac{\frac{n}{2} {(2a+(n-1)d)}}{\frac{m}{2} {(2a+(n-1)d)}}= 
+\begin{align}\frac{\frac{m}{2} {(2a+(m-1)d)}}{\frac{n}{2} {(2a+(n-1)d)}}= 
  {\frac{m^2}{n^2}}\end{align}
- By cross multiplying and solving we get a relation between a and d that is
+ By cross multiplying we get 
+ \begin{align}\frac{n}{2a+(m-1)d}=\frac{m}{2a+(n-1)d}\end{align}
+ solving the above equation we get
  \begin{align}2a=d\end{align}
  The ratio between $m^{th}$ and $n^{th}$ terms is given by
  \begin{align}\frac{T(m)}{T(n)}=\frac{a+(m-1)d}{a+(n-1)d}\end{align}
  
- Now substituting (5) in (6) we get \textbf{T(m):T(n)=(2m-1):(2n-1)}.
+ Now substituting (5) in (6) we get \begin{align}\frac{T(m)}{T(n)}=\frac{a+(m-1)2a}{a+(n-1)2a}\end{align}
 
+ 
+ 
+By cancelling a in both the denominator and numerator we get \textbf{T(m):T(n)=(2m-1):(2n-1)}.
+if we consider that the A.P is starting from n=0 we will have sum of n terms and nth term as 
+\begin{align}S(n)=\frac{n+1}{2}(2a+nd)\end{align}
+\begin{align}x(n)=\frac{n+1}{2}(2x(0)+nd)\end{align}
+\begin{align}T(n)=y(0)+nd\end{align}
+\begin{align}y(n)=y(0)+nd\end{align}
+Given,
+\begin{align}\frac{x(m)}{x(n)}=\frac{m^2}{n^2}\end{align}
+now substituting x(m) and x(n) into the (9) we get,
+\begin{align}\frac{\frac{m+1}{2} {(2x(0)+md)}}{\frac{n+1}{2} {(2x(0)+nd)}}&= 
+ \frac{m^2}{n^2}\end{align}
+ \begin{align}\frac{nm^2+m^2}{2x(0)+nd}&=\frac{n^2m+n^2}{2x(0)+md}
+ \end{align}
+ \begin{align}
+     2x(0)nm^2+2x(0)m^2+m^2nd
+     =2x(0)n^2m+n^2md+2 x(0)n^2
+ \end{align}
+\begin{align} 2x(0)(m^2-n^2+nm^2-mn^2)=d(n^2m-m^2n)\end{align}
+\begin{align}
+    2x(0)(m+n+mn)=-d(mn)
+\end{align}
+\begin{align}
+     2x(0)=\frac{-mnd}{m+n+mn}
+\end{align}
+The ratio between $m^{th}$ and $n^{th}$ terms is given by
+ \begin{align}\frac{y(m)}{y(n)}=\frac{y(0)+md}{y(0)+nd}\end{align}
+ Now substituting y(0)(same as x(0))in (20) we get 
+\begin{align} \frac{y(m)}{y(n)}=\frac{m(2m+n+2mn)}{n(2n+m+2mn)}\end{align}
+\pagebreak
 
 
 \renewcommand{\thefigure}{\theenumi}
