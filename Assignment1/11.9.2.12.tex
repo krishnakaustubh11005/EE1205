@@ -1,0 +1,152 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,enumitem,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                              
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                        
+\usepackage{lscape}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\usepackage{float}
+\usepackage{adjustbox}
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\title{Exempler- 11.9.2.12}
+\author{EE22BTECH11005- Ambati Krishna Kaustubh$^{*}$% <-this % stops a space
+}
+
+\maketitle
+\newpage
+\bigskip
+
+
+
+\textbf{Question:}
+
+The ratio of sums of m and n terms of an A.P. is $m^2:n^2$.Show
+that the ratio of $m^{th}$ and $n^{th}$ term is (2m-1):(2n-1).
+
+{\textbf{Solution:}}
+
+
+
+nth term of an A.P. is given by 
+\begin{align}y(n)=y(0)+nd\end{align}
+sum of n terms is given by
+\begin{align}
+    x(n)=\sum_{k=0}^n y(k)
+\end{align}
+\begin{align}x(n)=\frac{n+1}{2}(2x(0)+nd)\end{align}
+
+Given,
+\begin{align}\frac{x(m)}{x(n)}=\frac{m^2}{n^2} \label{eq:sum} \end{align} 
+now substituting x(m) and x(n) into the (4) we get,
+\begin{align}\frac{\frac{m+1}{2} {(2x(0)+md)}}{\frac{n+1}{2} {(2x(0)+nd)}}&= 
+ \frac{m^2}{n^2}\end{align}
+ \begin{align}\frac{nm^2+m^2}{2x(0)+nd}&=\frac{n^2m+n^2}{2x(0)+md}
+ \end{align}
+ \begin{align}
+     2x(0)nm^2+2x(0)m^2+m^2nd
+     =2x(0)n^2m+n^2md+2 x(0)n^2
+ \end{align}
+\begin{align} 2x(0)(m^2-n^2+nm^2-mn^2)=d(n^2m-m^2n)\end{align}
+\begin{align}
+    2x(0)(m+n+mn)=-d(mn)
+\end{align}
+\begin{align}
+     2x(0)=\frac{-mnd}{m+n+mn}
+\end{align}
+The ratio between $m^{th}$ and $n^{th}$ terms is given by
+ \begin{align}\frac{y(m)}{y(n)}=\frac{y(0)+md}{y(0)+nd}\end{align}
+ 
+\begin{align} \frac{y(m)}{y(n)}=\frac{m(2m+n+2mn)}{n(2n+m+2mn)}\end{align}
+\pagebreak
+
+
+\input{tables/tab11.9.2.12}
+\begin{enumerate}
+ \item Analysis of equation for sum of n terms of an A.P:\\[4pt]
+   
+ By the differentiation property :
+
+\begin{align}
+   n x\brak{n} &\xleftrightarrow{\mathcal{Z}} \brak{-z} \frac{dX\brak{z}}{dz} \\
+\implies  n u\brak{n} &\xleftrightarrow{\mathcal{Z}} \frac{z^{-1}}{\brak{1-z^{-1}}^2} ,\cbrak{z\in\mathbb{C} : \lvert z \rvert > 1} \\
+\implies     n^2 u\brak{n}&\xleftrightarrow{\mathcal{Z}}\frac{z^{-1}\brak{z^{-1}+1}}{\brak{1-z^{-1}}^3} ,\cbrak{z\in\mathbb{C} : \lvert z \rvert > 1}\end{align}
+
+
+\begin{align}
+   n^2\cdot u(n)\xleftrightarrow{\mathcal{Z}} \frac{z^{-1}(1+z^{-1})}{(1-z^{-1})^{3}}, {\{\hspace{4pt} {z\in\mathbb{C} : \lvert z \rvert >1}\}} \end{align} \label{eq:diff2}
+\begin{align} X\brak{z} &= \sum_{n=-\infty}^\infty x\brak{n}\cdot z^{-n}\end{align} \\
+\begin{align} X\brak{z} &= \sum_{n=0}^\infty \frac{n+1}{2}(2x(0)+nd)\cdot{u(n)}\cdot z^{-n}\end{align} \\
+\begin{align}
+   X(z)=2x(0)U(z)-2x(0)z\frac{dU(z}{dz}+dz^2\frac{d^{2}U(z)}{dz^2}
+\end{align}
+
+\begin{align}
+ \therefore  X(z)=\frac{z^{-1}(d-x(0))+x(0)}{2(({1-z^{-1}})^{3})} ,\{\hspace{4pt} {z\in\mathbb{C} : \lvert z \rvert >1\}} \end{align}
+\item 
+Analysis equation for the $n^{th}$term of an A.P.:\\
+\begin{align}
+    y(n)=y(0)+nd
+\end{align}
+\begin{align}
+    n\cdot u(n)&\xleftrightarrow{\mathcal{Z}}\frac{z^-1}{\brak{{1-z^{-1}}}^{-2}}, {\{\hspace{4pt} {z\in\mathbb{C} : \lvert z \rvert >1}\}}
+\end{align}
+\begin{align} Y\brak{z} &= \sum_{n=-\infty}^\infty y\brak{n}\cdot z^{-n}\end{align} \\
+\begin{align} Y\brak{z} &= \sum_{n=0}^\infty (y(0)+nd)\cdot{u(n)}\cdot z^{-n}\end{align} \\
+\begin{align}
+    Y(z)=y(0)U(z)-zd\frac{dU(z)}{dz}
+\end{align}
+\begin{align}
+   \therefore Y\brak{z}= \frac{y(0)+\brak{d-y(0)}z^{-1}}{(1-z^{-1})^{2}}, \{\hspace{4pt} {z\in\mathbb{C} : \lvert z \rvert >1\}}
+\end{align}
+ \end{enumerate}
+
+
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\end{document}
