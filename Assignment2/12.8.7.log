@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  27 JAN 2024 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  27 JAN 2024 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,15 +1018,20 @@ tex
 2022/01/19 4.03 tkz-obj-eu-show.tex
 ) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-triangles.tex
 2022/01/19 4.03 tkz-obj-eu-triangles.tex
-))
+)) (./gvv.sty
 
-! LaTeX Error: File `gvv.sty' not found.
+! LaTeX cmd Error: Invalid argument type 'g' in command '\system' (requires
+(cmd)              xparse).
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.110 }
+       
+? 
+\c@matchleft=\count331
+\c@matchright=\count332
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
@@ -1050,23 +1055,23 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip67
 \LTpre=\skip68
 \LTpost=\skip69
-\LTchunksize=\count331
+\LTchunksize=\count333
 \LTcapwidth=\dimen325
 \LT@head=\box75
 \LT@firsthead=\box76
 \LT@foot=\box77
 \LT@lastfoot=\box78
 \LT@gbox=\box79
-\LT@cols=\count332
-\LT@rows=\count333
-\c@LT@tables=\count334
-\c@LT@chunks=\count335
+\LT@cols=\count334
+\LT@rows=\count335
+\c@LT@tables=\count336
+\c@LT@chunks=\count337
 \LT@p@ftn=\toks46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip70
-\multirow@cntb=\count336
+\multirow@cntb=\count338
 \multirow@dima=\skip71
 \bigstrutjot=\dimen326
 )
@@ -1078,7 +1083,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count337
+\c@float@type=\count339
 \float@exts=\toks47
 \float@box=\box80
 \@float@everytoks=\toks48
@@ -1095,7 +1100,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks49
 \XKV@tempa@toks=\toks50
 )
-\XKV@depth=\count338
+\XKV@depth=\count340
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1129,21 +1134,21 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count339
+\c@checkoddpage=\count341
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box83
-\sift@deathcycles=\count340
+\sift@deathcycles=\count342
 \@vwid@loff=\dimen339
 \@vwid@roff=\dimen340
 ))
-\c@theorem=\count341
-\c@problem=\count342
-\c@proposition=\count343
-\c@lemma=\count344
-\c@example=\count345
-\c@rem=\count346
+\c@theorem=\count343
+\c@problem=\count344
+\c@proposition=\count345
+\c@lemma=\count346
+\c@example=\count347
+\c@rem=\count348
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 8.
 
@@ -1234,16 +1239,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count347
+\scratchcounter=\count349
 \scratchdimen=\dimen341
 \scratchbox=\box84
-\nofMPsegments=\count348
-\nofMParguments=\count349
+\nofMPsegments=\count350
+\nofMParguments=\count351
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count350
+\MPscratchCnt=\count352
 \MPscratchDim=\dimen342
-\MPnumerator=\count351
-\makeMPintoPDFobject=\count352
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1254,7 +1259,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count353
+\c@lstlisting=\count355
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 48.
@@ -1277,7 +1282,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count354
+\c@section@level=\count356
 )
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
@@ -1317,11 +1322,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-! Undefined control sequence.
-l.68 \solution
-              
-? 
-(./tab12.8.7.tex
+(./tables/tab12.8.7.tex
 Overfull \hbox (6.00595pt too wide) in paragraph at lines 7--20
  [] 
  []
@@ -1344,12 +1345,12 @@ Package rerunfilecheck Info: File `12.8.7.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30632 strings out of 478287
- 602710 string characters out of 5849290
- 851116 words of memory out of 5000000
- 48149 multiletter control sequences out of 15000+600000
- 538702 words of font info for 171 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 30715 strings out of 478287
+ 603601 string characters out of 5849290
+ 852209 words of memory out of 5000000
+ 48223 multiletter control sequences out of 15000+600000
+ 540052 words of font info for 173 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
  101i,12n,96p,410b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
@@ -1357,7 +1358,7 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 12.8.7.pdf (1 page, 44794 bytes).
+Output written on 12.8.7.pdf (1 page, 45104 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
