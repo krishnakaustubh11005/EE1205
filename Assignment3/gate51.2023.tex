@@ -1,0 +1,122 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,enumitem,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                              
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                        
+\usepackage{lscape}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{siunitx}
+\usepackage[siunitx]{circuitikz}
+\parindent 0px
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\title{GATE: 51.2023}
+\author{EE22BTECH11005- Ambati Krishna Kaustubh$^{*}$% <-this % stops a space
+}
+
+\maketitle
+\newpage
+\bigskip
+
+\textbf{Question:}For the circuit shown,if $i=\sin 1000t$, the instantaneous value of the Thevenin's voltage(in volts) across the terminals a anb b at time t=5ms is\\[2pt]
+
+\begin{circuitikz}[american voltages,american currents]
+    % Draw the circuit components
+    \draw (0,0) -- (2,0);
+    \draw (2,2) to [resistor,l=$10\Omega$] (2,4);
+    \draw (2,4) -- (0,4);
+    \draw (2,0) to [capacitor,l=$-j10\Omega$,*-*,i_=$i_x$] (2,2);
+    \draw (2,0) -- (5,0);
+    \draw (5,0) to[inductor,l=$j10\Omega$] (5,2);
+    \draw (5,2) to [resistor,l=$10\Omega$] (5,4);
+  \draw (5,4) to [cV,l^=$4i_x$,invert] (2,4);
+  \draw (5,4) -- (6,4);
+  \draw (6,4) to[I,l=$\sin 1000t$,invert] (6,0);
+  \draw (6,0) -- (5,0);
+   \node[circle,fill=black,inner sep=1.5pt,label=above:a] at (0,0) {};
+    \node[circle,fill=black,inner sep=1.5pt,label=above:b] at (0,4) {};
+    \end{circuitikz}\\[4pt]
+
+\solution By source transforming the given circuit we get\\[2pt]
+\begin{circuitikz}[american voltages,american currents]
+    % Draw the circuit components
+    \draw (0,0) -- (2,0);
+    \draw (2,4) to [resistor,l=$10\Omega$,*-*,i_=$i_x$](2,2);
+    \draw (2,4) -- (0,4);
+    \draw (2,2) to [capacitor,l=$-j10\Omega$] (2,0);
+    \draw (2,0) -- (5,0);
+    \draw (5,0) to[V,l=$(10+10j)\sin1000t$,invert] (5,1);
+    \draw (5,1) to[inductor,l=$j10\Omega$] (5,2);
+    \draw (5,2) to [resistor,l=$10\Omega$] (5,4);
+  \draw (5,4) to [cV,l^=$4i_x$,invert] (2,4);
+   \node[circle,fill=black,inner sep=1.5pt,label=above:a] at (0,0) {};
+    \node[circle,fill=black,inner sep=1.5pt,label=above:b] at (0,4) {};
+    \end{circuitikz} \\[2pt]
+
+Applying KVL in the loop, \\[2pt]
+\begin{align}
+    10+j10+4i_x-(j10+10+10-j10)i_x&=0\end{align}
+    \begin{align}
+    10+j10+4i_x-20i_x&=0
+\end{align}
+\begin{align}
+    i_x=0.884\angle 45^{0}
+\end{align}
+\begin{align}
+    V_{th}&=i_x(10-j10)\end{align}
+    \begin{align}&=12.5\angle0^{0}
+\end{align}
+\begin{align}
+    V_{th}=12.5\sin1000t
+\end{align}
+\begin{align}
+    t=5ms
+\end{align}
+\therefore $V_{th}=-11.985V$
+
+\end{document}
+
