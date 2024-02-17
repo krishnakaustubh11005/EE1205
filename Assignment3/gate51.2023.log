@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  31 JAN 2024 23:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  17 FEB 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,28 +1515,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 \therefore
-                 $V_{th}=-11.985V$
+l.119 $ \therefore $V_
+                      {th}=-11.985V$ $
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 \therefore $V_
-                    {th}=-11.985V$
+l.120 
+      
 ? 
+<figs/gate.png, id=7, 462.528pt x 346.896pt>
+File: figs/gate.png Graphic file (type png)
+<use figs/gate.png>
+Package pdftex.def Info: figs/gate.png  used on input line 123.
+(pdftex.def)             Requested size: 258.0pt x 193.50879pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 123--125
+ [][] 
+ []
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ <./figs/gate.png>]
+(./gate51.2023.aux)
 
-] (./gate51.2023.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `gate51.2023.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50325 strings out of 478287
- 1181583 string characters out of 5849290
- 1649490 words of memory out of 5000000
- 67751 multiletter control sequences out of 15000+600000
+ 50340 strings out of 478287
+ 1181802 string characters out of 5849290
+ 1649527 words of memory out of 5000000
+ 67762 multiletter control sequences out of 15000+600000
  536264 words of font info for 172 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,8n,96p,415b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1547,10 +1560,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gate51.2023.pdf (1 page, 46073 bytes).
+Output written on gate51.2023.pdf (1 page, 83818 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
