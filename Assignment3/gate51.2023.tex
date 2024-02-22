@@ -97,26 +97,49 @@
     \node[circle,fill=black,inner sep=1.5pt,label=above:b] at (0,4) {};
     \end{circuitikz} \\[2pt]
 
-Applying KVL in the loop, \\[2pt]
+Solving using sinusoidal steady state analysis,
+\begin{circuitikz}[american]
+    % Draw the circuit components
+    \draw (0,0) -- (2,0);
+    \draw (2,4) to [european resistor,l=$10\Omega$,*-*,i_=$I_x$](2,2);
+    \draw (2,4) -- (0,4);
+    \draw (2,2) to [european resistor,l=$X_c(\frac{1}{j\omega C})$] (2,0);
+    \draw (2,0) -- (5,0);
+    \draw (5,0) to[V,l=$10\angle 45^\circ$,invert] (5,1);
+    \draw (5,1) to[european resistor,l=$X_L(j\omega L)$] (5,2);
+    \draw (5,2) to [european resistor,l=$10\Omega$] (5,4);
+  \draw (5,4) to [cV,l^=$4I_x$,invert] (2,4);
+   \node[circle,fill=black,inner sep=1.5pt,label=above:a] at (0,0) {};
+    \node[circle,fill=black,inner sep=1.5pt,label=above:b] at (0,4) {};
+    \end{circuitikz} 
+
+Applying KVL we get,
 \begin{align}
-    10+j10+4i_x-(j10+10+10-j10)i_x&=0\end{align}
+    10 \angle 45^\circ-(j\omega L)I_x-10I_x+4I_x-10I_x-(\frac{1}{j\omega C})I_x=0
+\end{align}
+\begin{align}
+    I_x=\frac{10 \angle 45^\circ}{16+j\omega L+\frac{1}{j\omega C}}
+\end{align}
+\begin{align}
+    V_{ab}=I_x(10+\frac{1}{j\omega C})
+\end{align}
+\begin{align}
+    V_{ab}=\frac{10\angle 45^\circ(10j\omega C+1)}{16j\omega C-\omega^2LC+1}
+    \end{align}
+    From the question we can observe that,
     \begin{align}
-    10+j10+4i_x-20i_x&=0
+        \frac{1}{\omega C}=\omega L
+    \end{align}
+    \begin{align}
+        \omega^2LC=1 \label{eq:equation}
+    \end{align}
+Substituting $\ref{eq:equation}$ and values of $\omega C$ and $\omega L$ 
+\begin{align}
+    V_{ab}=12.5\angle 0^\circ
 \end{align}
 \begin{align}
-    i_x=0.884\angle 45^{0}
+    V_{ab}=12.5\sin{1000t}
 \end{align}
-\begin{align}
-    V_{th}&=i_x(10-j10)\end{align}
-    \begin{align}&=12.5\angle0^{0}
-\end{align}
-\begin{align}
-    V_{th}=12.5\sin1000t
-\end{align}
-\begin{align}
-    t=5ms
-\end{align}
-$ \therefore $V_{th}=-11.985V$ $
 
 \begin{figure}[H]
   \centering
