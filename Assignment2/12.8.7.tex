@@ -26,7 +26,7 @@
 \usepackage{longtable}                                       
 \usepackage{calc}                                             
 \usepackage{multirow}                                         
-\usepackage{hhline}                                           
+\usepackage{hhline}                                          
 \usepackage{ifthen}                                           
 \usepackage{lscape}
 \usepackage{float}
@@ -47,8 +47,7 @@
 \newtheorem{rem}{Remark}
 \begin{document}
 
-\bibliographystyle{IEEEtran}
-\vspace{3cm}
+\bibliographystyle{IEEEtran} 
 
 \title{NCERT-12.8.7}
 \author{\textbf{EE23BTECH11005} - Ambati Krishna Kaustubh% <-this % stops a space
@@ -57,12 +56,13 @@
 \newpage
 \bigskip
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
 \section*{Question}
 
 The amplitude  of the magnetic part of a harmonic elctromagnetic wave
-is $B_0=510$nT.What is the amplitude of the electric part of the electromagnetic wave. 
+
+ is $B_0=510$nT.What is the amplitude of the electric part of the electromagnetic wave. 
    
 \solution
 
@@ -72,5 +72,21 @@ is $B_0=510$nT.What is the amplitude of the electric part of the electromagnetic
  \end{align}
  \begin{align}E_0=153V-m\end{align}
  \input{tables/tab12.8.7}
-
+Consider the general equation of Electric Field and Magnetic field
+\begin{align}
+    E=E_0\sin(\omega t-kx)
+\end{align}
+\begin{align}
+    B=B_0\sin(\omega t-kx)
+\end{align}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{figs/analog1.png}
+    \caption{Graph of Magnetic Field vs Time}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{figs/analog2.png}
+    \caption{Graph of Electric Field vs Time}
+\end{figure}
 \end{document}
