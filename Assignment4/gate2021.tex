@@ -1,0 +1,88 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,enumitem,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                              
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                        
+\usepackage{lscape}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{siunitx}
+\usepackage[siunitx]{circuitikz}
+\parindent 0px
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\title{GATE: 19.2021}
+\author{EE22BTECH11005- Ambati Krishna Kaustubh$^{*}$% <-this % stops a space
+}
+
+\maketitle
+\newpage
+\bigskip
+
+\textbf{Question:}A single degree of freedom spring-mass-damper system is designed to ensure that the system returns to its original undisturbed position in minimum possible time without overshooting.If the mass of the system is 10kg,spring stiffness is 17400N/m and the natural frequency is 13.2rad/s,the coefficient of damping of the system is\\[2pt]
+
+\solution 
+\input{tables/gate2021tab}The General Differential Equation of the spring-mass-Damper system is given by
+\begin{align}
+    m\frac{d^2x}{dt}+a\frac{dx}{dt}+kx=0
+\end{align}
+Taking Laplace Transform:
+\begin{align}
+    ms^2X(s)+asX(s)+kX(s)=0
+\end{align}
+\begin{align}
+    \implies ms^2+as+k=0\\
+    \therefore s=\frac{-a\pm \sqrt{a^2-4km}}{2m}\\
+    w_d=\sqrt{a^2-4km}
+\end{align}
+condition for critical damping $w_d=0$
+\begin{align}
+    \implies a^2=4km \\
+    a=834.266
+\end{align}
+
+
+\end{document}
